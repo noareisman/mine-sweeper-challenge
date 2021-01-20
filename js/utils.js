@@ -65,14 +65,7 @@ function restartGame(selector) {
     elModal.style.display = 'block';
 }
 
-function timer() {
-    startTime = Date.now();
-    gInterval = setInterval(function (){
-        elapsedTime = Date.now() - startTime;
-        elTimer=document.querySelector('.timer')
-        elTimer.innerHTML = (elapsedTime / 1000).toFixed(3);
-    }, 100);
-}
+
 
 
 
