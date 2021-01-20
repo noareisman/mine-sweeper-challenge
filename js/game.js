@@ -185,7 +185,7 @@ function revealBoms(elCell){
     for (var i=0; i<gMinesCoords.length;i++){
         gMinesCoords[i].isShown=true;
     }
-    elCell.style.background-color='red';
+    // elCell.style.background-color='red';
 } 
 
 
