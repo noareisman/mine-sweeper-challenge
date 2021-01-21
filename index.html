@@ -9,15 +9,24 @@
 </head>
 
 <body onload="init()">
-    <h2>Mine Sweeper</h2>
-    <div class="level"><div class="lives"></div>
-        <button onclick="levelClicked(4,2)">BEGINNER</button>
-        <button onclick="levelClicked(8,12)">MEDIUM</button>
-        <button onclick="levelClicked(12,30)">EXPERT</button>
-      </div>
-    <div class="timer">0</div>
-    <button class="emoji-button" onclick="init()"></button> 
-    <div class="board-container"></div>
+    <h1>Mine Sweeper</h1>
+    <div class="stage">
+        <div class="lives"></div>
+        <div class="level">
+            <button onclick="levelClicked(4,2)">BEGINNER</button>
+            <button onclick="levelClicked(8,12)">MEDIUM</button>
+            <button onclick="levelClicked(12,30)">EXPERT</button>
+        </div>
+        <div class="timer">0</div>
+        <div class="emoji"><button class="emoji-button" onclick="init()"></button></div>
+        <div class="hint">
+            <button class="hint-button-1" onclick="hint(this,1)"></button>
+            <button class="hint-button-2" onclick="hint(this,2)"></button>
+            <button class="hint-button-3" onclick="hint(this,3)"></button>
+        </div>
+        <div class="board-container"></div>
+        <div class="modal">OOPS! You steped on a mine!</div>
+    </div>
 
     <script src="js/utils.js"></script>
     <script src="js/game.js"></script>

@@ -1,7 +1,13 @@
+body{
+    vertical-align: center;
+    position: fixed;
+    }
+
 table {
     margin: 0 auto;
     font-weight: bold;
     border-radius: 2px;
+
 }
 
 td {
@@ -18,3 +24,67 @@ td:hover {
     background-color: #E5E5BE;
     color: #003973;
 }
+
+.modal{
+    display: none;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(255, 227, 16);
+    color: black;
+    font-size: medium;
+    height:25px;
+    width:200px;
+}
+h1{
+    text-align: center;
+}
+
+
+/* 
+.stage{
+    background-color: rgb(163, 163, 13);
+    color: black;
+    width: 300px;
+    height: 400px;
+    margin-left: 350px;
+} */
+
+.timer{
+    background-color: yellow;
+    color: black;
+    width: 80px;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+    font-size: x-large;
+}
+.level{
+    width: 800px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.lives{
+    width: 800px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+}
+.emoji{
+    width: 800px;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hint{
+    width: 800px;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
