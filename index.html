@@ -10,25 +10,42 @@
 
 <body onload="init()">
     <h1>Mine Sweeper</h1>
-    <div class="stage">
-        <div class="lives"></div>
-        <div class="level">
-            <button onclick="levelClicked(4,2)">BEGINNER</button>
-            <button onclick="levelClicked(8,12)">MEDIUM</button>
-            <button onclick="levelClicked(12,30)">EXPERT</button>
+    
+        <div class="stage">
+            <div class="game-container">
+                <div class="level">
+                    <button onclick="levelClicked(4,2)">BEGINNER</button>
+                    <button onclick="levelClicked(8,12)">MEDIUM</button>
+                    <button onclick="levelClicked(12,30)">EXPERT</button>
+                </div>
+                <div class="position-mines">
+                    <button class="position-mines-button" onclick="isPositionMines()">POSITION MINES MANUALLY</button>
+                </div>
+                <div class="lives"></div>
+                <div class="emoji">
+                    <button class="emoji-button" onclick="init()"></button>
+                </div>
+                <div class="timer">0</div>
+                <div class="hint">
+                    <button class="undo-button" onclick="undo()">UNDO</button>
+                    <button class="hint-button-1" onclick="hint(this,1)"></button>
+                    <button class="hint-button-2" onclick="hint(this,2)"></button>
+                    <button class="hint-button-3" onclick="hint(this,3)"></button>
+                    <button class="safe-click-button" onclick="safeClick(this)"></button>
+                </div>
+                <div class="undo">
+                </div>
+                <div class="board-container"></div>
+                <div class="modal">OOPS! You steped on a mine!</div>
+            </div>
+            <!-- <div class="scores">
+                <div class="best-score-container"></div>
+            </div> -->
         </div>
-        <div class="timer">0</div>
-        <div class="emoji"><button class="emoji-button" onclick="init()"></button></div>
-        <div class="hint">
-            <button class="hint-button-1" onclick="hint(this,1)"></button>
-            <button class="hint-button-2" onclick="hint(this,2)"></button>
-            <button class="hint-button-3" onclick="hint(this,3)"></button>
-        </div>
-        <div class="board-container"></div>
-        <div class="modal">OOPS! You steped on a mine!</div>
-    </div>
+   
 
     <script src="js/utils.js"></script>
+    <!-- <script src="js/best-score.js"></script> -->
     <script src="js/game.js"></script>
 </body>
 
